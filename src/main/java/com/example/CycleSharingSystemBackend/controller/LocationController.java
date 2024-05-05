@@ -1,12 +1,12 @@
 package com.example.CycleSharingSystemBackend.controller;
 
+import com.example.CycleSharingSystemBackend.model.Location;
 import com.example.CycleSharingSystemBackend.service.LocationService;
 import com.example.CycleSharingSystemBackend.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.xml.stream.Location;
 
 @RestController
 @RequestMapping("/location")

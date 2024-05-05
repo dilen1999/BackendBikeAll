@@ -3,7 +3,6 @@ package com.example.CycleSharingSystemBackend.model;
 import jakarta.persistence.*;
 import lombok.*;
 
-import javax.xml.stream.Location;
 import java.util.List;
 import java.util.Set;
 

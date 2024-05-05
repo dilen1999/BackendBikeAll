@@ -1,6 +1,7 @@
 package com.example.CycleSharingSystemBackend.controller;
 
 import com.example.CycleSharingSystemBackend.holder.StationDistance;
+import com.example.CycleSharingSystemBackend.model.Location;
 import com.example.CycleSharingSystemBackend.model.Station;
 import com.example.CycleSharingSystemBackend.repository.Stationrepository;
 import com.example.CycleSharingSystemBackend.service.LocationService;
@@ -10,7 +11,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.xml.stream.Location;
 import java.util.List;
 
 @RestController
@@ -25,7 +25,7 @@ public class StationController {
     private LocationService locationService;
     @PostMapping(value = "/addStation")
     public Station newStation(@RequestBody Station station) {
-        Location savedLocation = locationService.addLocation(station.getLocation());
+        Location savedLocation = locationService.addLocation( station.getLocation());
         station.setLocation(savedLocation);
         return stationService.addStation(station);
     }

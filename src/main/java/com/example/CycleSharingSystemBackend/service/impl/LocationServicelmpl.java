@@ -1,11 +1,12 @@
 package com.example.CycleSharingSystemBackend.service.impl;
 
+import com.example.CycleSharingSystemBackend.model.Location;
 import com.example.CycleSharingSystemBackend.repository.LocationRepository;
 import com.example.CycleSharingSystemBackend.service.LocationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.xml.stream.Location;
+
 import java.util.concurrent.atomic.AtomicLong;
 
 @Service
@@ -33,6 +34,7 @@ public class LocationServicelmpl implements LocationService {
     public Location findByLocationId(String locationId) {
         return locationRepository.findByLocationId(locationId);
     }
+
 
     @Override
     public Location updateLocation(Location updatedLocation) {

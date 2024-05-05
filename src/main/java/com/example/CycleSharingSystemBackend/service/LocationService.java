@@ -1,6 +1,7 @@
 package com.example.CycleSharingSystemBackend.service;
 
-import javax.xml.stream.Location;
+
+import com.example.CycleSharingSystemBackend.model.Location;
 
 public interface LocationService {
     Location addLocation(Location location);

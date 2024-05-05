@@ -1,6 +1,7 @@
 package com.example.CycleSharingSystemBackend.service.impl;
 
 import com.example.CycleSharingSystemBackend.holder.LiveRideUser;
+import com.example.CycleSharingSystemBackend.model.Location;
 import com.example.CycleSharingSystemBackend.model.User;
 import com.example.CycleSharingSystemBackend.repository.Userrepository;
 import com.example.CycleSharingSystemBackend.service.LocationService;
@@ -9,7 +10,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.xml.stream.Location;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
